@@ -1,0 +1,323 @@
+*
+{
+    margin: 0;
+}
+#all
+{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-color: lightslategray;
+}
+#l_curtain
+{
+    position: absolute;
+    height:500px;
+    width: 500px;
+    right: 0px;
+    z-index: 1;
+    background-image: url("img/l_curtain.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: l_curtain;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+
+}
+
+#r_curtain
+{
+    position: absolute;
+    height:500px;
+    width: 500px;
+    left: 0px;
+    z-index: 2;
+    background-image: url("img/r_curtain.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: r_curtain;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+
+}
+#yazi 
+{
+    position: absolute;
+    height:50px;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: -50px;
+    z-index: 3;
+    color: red;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    animation-name: yazi;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    
+}
+#html
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: -100px;
+    top: 10%;
+    z-index: 4;
+    background-image: url("img/html.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: html;
+    animation-duration: 10s;
+    animation-delay: 9s;
+    transform:rotate(180deg);
+    
+
+
+}
+#css
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: -100px;
+    top: 40%;
+    z-index: 5 ;
+    background-image: url("img/css.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: css;
+    animation-duration: 9s;
+    animation-delay: 9s;
+    transform:rotate(180deg);
+
+
+
+}
+#js
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: -100px;
+    top: 70%;
+    z-index: 6;
+    background-image: url("img/js.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: js;
+    animation-duration: 8s;
+    animation-delay: 9s;
+    transform:rotate(180deg);
+    
+
+
+}
+#php
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: -100px;
+    top: 10%;
+    z-index: 7;
+    background-image: url("img/php.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: php;
+    animation-duration: 7s;
+    animation-delay: 9s;
+    transform:rotate(180deg);
+   
+
+
+}
+#laravel
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: -100px;
+    top: 40%;
+    z-index: 8;
+    background-image: url("img/laravel.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: laravel;
+    animation-duration: 6s;
+    animation-delay: 9s;
+    transform:rotate(180deg);
+    
+
+}
+#angular
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: -100px;
+    top: 70%;
+    z-index: 9;
+    background-image: url("img/angular.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: angular;
+    animation-duration: 5s;
+    animation-delay: 9s;
+    transform:rotate(180deg);
+    
+
+
+}
+#logo
+{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: -50%;
+    z-index:10;
+    background-image: url("img/yup.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-delay: 19s;
+    
+    
+
+
+}
+@keyframes logo
+{
+    from{
+        top: -50%;
+    }
+    to 
+    {
+        top: 0;
+    }
+}
+@keyframes yazi
+{
+    from
+    {
+        top: -50px
+    }
+    to
+    {
+        top: 0px;
+    }
+}
+@keyframes l_curtain
+{
+   from
+   {
+       right: 0px;
+
+   }
+   to
+   {
+       right: -50%;
+   }
+}
+@keyframes r_curtain
+{
+   from
+   {
+       left: 0px;
+
+   }
+   to
+   {
+       left: -50%;
+   }
+}
+@keyframes html
+{
+    from
+    {
+        right: -100px;
+        transform:rotate(180deg)
+    }
+    to
+    {
+        right: 80%;
+        transform:rotate(0deg)
+    }
+}
+@keyframes css
+{
+    from
+    {
+        right: -100px;
+        transform:rotate(180deg)
+    }
+    to
+    {
+        right: 70%;
+        transform:rotate(0deg)
+    }
+}
+@keyframes js
+{
+    from
+    {
+        right: -100;
+        transform:rotate(180deg)
+
+    }
+    to
+    {
+        right: 60%;
+        transform:rotate(0deg)
+    }
+
+}
+@keyframes php
+{
+    from
+    {
+        left: -100px;
+        transform:rotate(180deg)
+    }
+    to
+    {
+        left: 80%;
+        transform:rotate(0deg)
+    }
+}
+@keyframes laravel
+{
+    from
+    {
+        left: -100px;
+        transform:rotate(180deg)
+    }
+    to
+    {
+        left: 70%;
+        transform:rotate(0deg)
+    }
+}
+@keyframes angular
+{
+    from
+    {
+        left: -100;
+        transform:rotate(180deg)
+
+    }
+    to
+    {
+        left: 60%;
+        transform:rotate(0deg)
+    }
+}
